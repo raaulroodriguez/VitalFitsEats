@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap");
+
+/* PALETA COLORES 
+    BLANCO #F5FFFA
+    VERDE PRINCIPAL #22c55e
+    VERDE CLARO #c2fbd7
+    VERDE A PROBAR #3cd815 #33c379
+    BLANCO A PROBAR fffcf0
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Comfortaa", sans-serif;
+}
+
+body {
+  background: url(/assets/img/fondo.png) no-repeat center fixed;
+  height: 100dvh;
+  font-size: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* INICIO HEADER */
+
+header {
+  display: flex;
+  grid-area: 1 / 1 / 2 / 2;
+  position: relative;
+  top: 0;
+  align-items: center;
+  padding: 5px;
+  z-index: 1000;
+}
+
+/* INICIO LOGO HEADER */
+
+header .logo img {
+  height: 50px;
+}
+
+/* FIN LOGO HEADER */
+
+/* INICIO NAV HEADER */
+
+header .nav {
+  display: flex;
+  padding: 2px;
+}
+
+header .nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header .nav ul li {
+  padding: 10px;
+}
+
+/* FIN NAV HEADER */
+
+/* INICIO LOGIN HEADER */
+
+/* FIN LOGIN HEADER */
+
+/*FIN HEADER */
+
+/* INICIO MAIN */
+
+main {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+/* FIN MAIN */
+
+/* INICIO CONTAINER */
+
+/* FIN CONTAINER */
+
+/* INICIO FOOTER */
+
+footer {
+  grid-area: 3 / 1 / 4 / 2;
+  text-align: center;
+  position: relative;
+}
+
+.top-footer {
+  list-style: none;
+  display: flex;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: transparent;
+  backdrop-filter: blur(50px);
+  justify-content: space-evenly;
+  border: 2px solid #000000;
+}
+
+.top-footer .titulo {
+  color: #000000;
+}
+.top-footer li {
+  padding: 3px;
+  list-style: none;
+}
+
+.top-footer li a {
+  color: #f5fffa;
+  text-decoration: none;
+}
+
+.nav-footer li:hover a {
+  color: #000000;
+}
+
+.rrss {
+  list-style: none;
+}
+
+.rrss li {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+}
+
+.rrss i {
+  width: 50px;
+}
+
+.rrss a:hover {
+  color: #000000;
+}
+
+.end-footer {
+  list-style: none;
+  padding: 8px;
+  color: #f5fffa;
+  background-color: #000000;
+  text-align: center;
+  font-size: 13px;
+}
+
+.end-footer p {
+  padding: 2px;
+}
+
+/* FIN FOOTER */
