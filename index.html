@@ -21,8 +21,48 @@
     <title>VitalFits Eats</title>
   </head>
   <body>
-    <header>
-      <div class="logo">
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav-logo">
+          <a href="#" class="logo">
+            <img src="assets/img/logo.png" alt="Logo VitalFits Eats" />
+            <span class="logo-nombre">VitalFits Eats
+          </a></span>
+
+          <div class="nav-barra" id="nav-barra">
+            <i class="fa-solid fa-bars nav-open"></i>
+            <i class="fa-solid fa-xmark nav-close"></i>
+          </div>
+        </div>
+
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-lista">
+            <li><a href="#" class="nav-link">Inicio</a></li>
+
+            <li class="nav-drop">
+              <div class="nav-link">
+                Servicios <i class="fa-solid fa-chevron-down flecha-drop"></i>
+              </div>
+            </li>
+
+            <li class="nav-drop">
+              <div class="nav-link">
+                Productos <i class="fa-solid fa-chevron-down flecha-drop"></i>
+              </div>
+            </li>
+
+            <li class="nav-drop">
+              <div class="nav-link">
+                Nosotros <i class="fa-solid fa-chevron-down flecha-drop"></i>
+              </div>
+            </li>
+
+            <li><a href="#" class="nav-link">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- 
+        <div class="logo">
         <a href="index.html"
           ><img src="assets/img/logo.png" alt="VitalFits Logo"
         /></a>
@@ -68,6 +108,7 @@
         <i class="fa-solid fa-user"></i
         ><a href="login.html"><b>Iniciar Sesión</b></a>
       </div>
+      -->
     </header>
     <main>
       <section class="container"></section>
@@ -125,5 +166,6 @@
         <p>© 2023 VitalFits Eats, Inc</p>
       </div>
     </footer>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
