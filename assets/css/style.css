@@ -7,6 +7,10 @@
     VERDE A PROBAR #3cd815 #33c379
 */
 
+:root {
+  --header-height: 1.5rem;
+}
+
 /* GENERAL */
 
 * {
@@ -20,8 +24,6 @@ body {
   background: url(/assets/img/fondo.png) no-repeat center fixed;
   height: 100dvh;
   font-size: 0.9rem;
-  display: grid;
-  grid-template-columns: 1fr;
 }
 
 ul {
@@ -45,13 +47,15 @@ a {
   left: 0;
   width: 100%;
   background-color: #33c379;
-  padding: 0.5rem;
-  border: 1px solid #000000;
   z-index: 1000;
 }
 
 .nav {
-  height: var(--header-height);
+  height: 3.5rem;
+  align-items: center;
+  text-align: center;
+  color: #fffcf0;
+  font-weight: bold;
 }
 
 .nav-logo .logo img {
@@ -87,6 +91,14 @@ a {
   font-weight: initial;
 }
 
+.nav-lista a {
+  color: #fffcf0;
+}
+
+.nav-link {
+  align-items: center;
+}
+
 .nav-barra {
   position: relative;
   width: 32px;
@@ -102,7 +114,7 @@ a {
   margin: auto;
   font-size: 1.25rem;
   cursor: pointer;
-  transition: opacity 0.3s, transform 0.4s;
+  transition: opacity 0.1s, transform 0.4s;
 }
 
 .nav-close {
@@ -115,7 +127,7 @@ a {
   .nav-menu {
     position: absolute;
     left: 0;
-    top: 2.4rem;
+    top: 2.5rem;
     width: 100%;
     height: calc(100vh - 3.5rem);
     overflow: auto;
@@ -130,13 +142,12 @@ a {
 
   .nav-lista {
     background-color: #33c379;
-    padding-top: 1.25rem;
   }
 
   .nav-link {
     color: #fffcf0;
     background-color: #33c379;
-    padding: 1.25rem 1.5rem;
+    padding: 1.25rem 1.25rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -152,6 +163,7 @@ a {
 
 .mostrar-menu {
   opacity: 1;
+  top: 3.5rem;
   pointer-events: initial;
 }
 
@@ -174,7 +186,7 @@ a {
 }
 
 .flecha-drop {
-  font-size: 1.25rem;
+  font-size: 1rem;
   transition: transform 0.4s;
 }
 
@@ -189,7 +201,7 @@ a {
 }
 
 .drop-link i {
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 .drop-link:hover {
@@ -206,7 +218,7 @@ a {
 
 .nav-drop:hover .drop-lista {
   max-height: 1000px;
-  transition: max-height 0.4s ease-out;
+  transition: max-height 0.4s ease-in;
 }
 
 .nav-drop:hover .flecha-drop {
@@ -253,7 +265,7 @@ a {
     height: 100%;
     padding: 0;
     justify-content: initial;
-    column-gap: 0.25rem;
+    column-gap: 0.2rem;
   }
 
   .nav-link:hover {
@@ -269,28 +281,27 @@ a {
     overflow: initial;
     position: absolute;
     left: 0;
-    top: 6rem;
+    top: 2.5rem;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.3s, top 0.3s;
+    transition: opacity 1s, top 1s;
   }
 
   .drop-link {
-    padding-inline: 1rem 3.5rem;
+    padding-inline: 1rem 2.5rem;
   }
 
   .nav-drop:hover .drop-lista {
     opacity: 1;
-    top: 5.5rem;
+    top: 18px;
     pointer-events: initial;
     transition: top 0.3s;
   }
 }
 
-/* LOGIN HEADER */ /* MAIN */
-main {
-  grid-area: 2 / 1 / 3 / 2;
-}
+/* LOGIN HEADER */
+
+/* MAIN */
 
 /* CONTAINER */
 
@@ -315,6 +326,7 @@ footer {
 
 .top-footer .titulo {
   color: #000000;
+  font-weight: bold;
 }
 .top-footer li {
   padding: 3px;
