@@ -249,6 +249,8 @@ a {
     height: calc(var(--header-height) + 2rem);
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    text-align: center;
   }
 
   .nav-barra {
@@ -288,7 +290,12 @@ a {
   }
 
   .drop-link {
-    padding-inline: 1rem 2.5rem;
+    padding-inline: 1rem 2rem;
+    width: 200px;
+  }
+
+  .drop-link i {
+    padding-right: 3px;
   }
 
   .nav-drop:hover .drop-lista {
