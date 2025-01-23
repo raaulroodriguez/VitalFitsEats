@@ -42,7 +42,8 @@ a {
 /* HEADER */
 
 .header {
-  position: fixed;
+  display: flex;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -52,8 +53,6 @@ a {
 
 .nav {
   height: 3.5rem;
-  align-items: center;
-  text-align: center;
   color: #fffcf0;
   font-weight: bold;
 }
@@ -156,7 +155,65 @@ a {
 
   .nav-link:hover {
     color: #000000;
+    font-weight: normal;
   }
+}
+
+/* BARRA BUSQUEDA */
+
+.busqueda {
+  display: flex;
+  position: absolute;
+  left: 10%;
+  padding: 10px;
+}
+
+.buscar {
+  box-sizing: border-box;
+  height: 30px;
+  width: 0;
+  padding: 0 15px;
+  border-radius: 50px;
+  font-size: 15px;
+  border: 1px solid #fffcf0;
+  transition: all 0.7s ease;
+}
+
+::placeholder {
+  color: #000000;
+}
+
+.lupa {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  background: #fffcf0;
+  line-height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.lupa i {
+  font-size: 25px;
+  color: #33c379;
+  line-height: 50px;
+  transition: all 0.7s ease;
+}
+
+.busqueda:hover input {
+  width: 300px;
+}
+
+.busqueda:hover i {
+  transform: rotate(-360deg);
+}
+
+.lupa:hover {
+  background: #33c379;
 }
 
 /* MOSTRAR MENU */
@@ -206,6 +263,7 @@ a {
 
 .drop-link:hover {
   color: #000000;
+  font-weight: normal;
 }
 
 .drop-lista {
@@ -272,6 +330,7 @@ a {
 
   .nav-link:hover {
     color: #000000;
+    font-weight: normal;
   }
 
   .nav-drop {
